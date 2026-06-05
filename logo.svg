@@ -11,11 +11,11 @@
     </linearGradient>
   </defs>
 
-  <!-- Background circle -->
-  <circle cx="512" cy="512" r="512" fill="url(#bgGrad)"/>
+  <!-- Background square with rounded corners -->
+  <rect x="0" y="0" width="1024" height="1024" rx="120" ry="120" fill="url(#bgGrad)"/>
 
-  <!-- Outer ring -->
-  <circle cx="512" cy="512" r="460" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="3"/>
+  <!-- Inner border -->
+  <rect x="30" y="30" width="964" height="964" rx="100" ry="100" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="3"/>
 
   <!-- Chat bubble shape -->
   <path d="M 200 280 Q 200 220 260 220 L 764 220 Q 824 220 824 280 L 824 580 Q 824 640 764 640 L 560 640 L 512 720 L 464 640 L 260 640 Q 200 640 200 580 Z"
