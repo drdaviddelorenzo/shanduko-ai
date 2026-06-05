@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a5c38;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#25D366;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="pulseGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.3" />
+      <stop offset="50%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0.3" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="512" cy="512" r="512" fill="url(#bgGrad)"/>
+
+  <!-- Outer ring -->
+  <circle cx="512" cy="512" r="460" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="3"/>
+
+  <!-- Chat bubble shape -->
+  <path d="M 200 280 Q 200 220 260 220 L 764 220 Q 824 220 824 280 L 824 580 Q 824 640 764 640 L 560 640 L 512 720 L 464 640 L 260 640 Q 200 640 200 580 Z"
+        fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.3)" stroke-width="4"/>
+
+  <!-- Heartbeat / pulse line inside bubble -->
+  <polyline points="230,430 310,430 350,310 390,560 430,380 460,480 490,430 534,430 570,430 610,310 650,550 690,370 720,430 794,430"
+            fill="none" stroke="url(#pulseGrad)" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- AI dots - neural network nodes -->
+  <circle cx="350" cy="310" r="12" fill="white" opacity="0.9"/>
+  <circle cx="390" cy="560" r="12" fill="white" opacity="0.9"/>
+  <circle cx="430" cy="380" r="10" fill="white" opacity="0.7"/>
+  <circle cx="610" cy="310" r="12" fill="white" opacity="0.9"/>
+  <circle cx="650" cy="550" r="12" fill="white" opacity="0.9"/>
+  <circle cx="690" cy="370" r="10" fill="white" opacity="0.7"/>
+
+  <!-- Bottom text: SHANDUKO AI -->
+  <text x="512" y="870"
+        font-family="Arial, sans-serif"
+        font-weight="700"
+        font-size="88"
+        fill="white"
+        text-anchor="middle"
+        letter-spacing="6"
+        opacity="0.95">SHANDUKO</text>
+
+  <text x="512" y="960"
+        font-family="Arial, sans-serif"
+        font-weight="300"
+        font-size="56"
+        fill="rgba(255,255,255,0.8)"
+        text-anchor="middle"
+        letter-spacing="22">AI</text>
+
+  <!-- Small Zimbabwe star accent -->
+  <polygon points="512,170 522,198 552,198 528,215 537,243 512,227 487,243 496,215 472,198 502,198"
+           fill="rgba(255,255,255,0.6)"/>
+</svg>
